@@ -34,10 +34,12 @@ function App() {
   return (
   <>
     < Header />
-    {flowers.map((flower) => {
-      console.log('flower es:', flower);
-      return < Card title={flower.title} link={flower.link}/>
-    })}
+    <div className='p-5 d-flex flex-row grid gap-4'>
+      {flowers.map((flower) => {
+        console.log('flower es:', flower);
+        return < Card title={flower.title} link={flower.link}/>
+      })}
+    </div>
     < Home title="Chrysanthemum" link="https://images.pexels.com/photos/2382970/pexels-photo-2382970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
     < Home title="Tulip" link="https://images.pexels.com/photos/66896/tulips-flowers-fish-eye-red-66896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
     < Home title="Lily" link="https://www.almanac.com/sites/default/files/styles/or/public/image_nodes/pink%20lilies-Anastasios71-SS.jpeg?itok=mmh-o8yf"/>
