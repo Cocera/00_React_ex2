@@ -2,6 +2,7 @@ import './App.css';
 import Home from "./components/Home/Home.jsx";
 import Header from "./components/Header/Header.jsx";
 import Card from "./components/Card/Card.jsx";
+import Contact from './components/Contact/Contact.jsx';
 
 const flowers = [
   {
@@ -34,6 +35,7 @@ function App() {
   return (
   <>
     < Header />
+    < Contact />
     <div className='p-5 d-flex flex-row grid gap-4'>
       {flowers.map((flower) => {
         console.log('flower es:', flower);
